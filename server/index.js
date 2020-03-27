@@ -8,7 +8,7 @@ app.use('/properties', createProxyMiddleware({ target: 'http://localhost:5000', 
 app.use('/exampleHomeSummary/', createProxyMiddleware({ target: 'http://localhost:3333', changeOrigin: true }));
 app.use('/api/neighborhoods', createProxyMiddleware({ target: 'http://localhost:3001', changeOrigin: true }));
 app.use('/api/houses', createProxyMiddleware({ target: 'http://localhost:3001', changeOrigin: true }));
-app.use('/api/gethomepictures', createProxyMiddleware({ target: 'http://localhost:3000', changeOrigin: true }));
+app.use('/api/gethomepictures', createProxyMiddleware({ target: 'http://localhost:3002', changeOrigin: true }));
 
 
 app.listen(port, () => {
